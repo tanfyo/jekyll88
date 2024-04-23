@@ -1,45 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>自动跳转页面</title>
-  <script>
-    function redirectToRandomURL() {
-      // 定义可选的安全访问选项
-      var options = [
-        "安全访问",
-        "隐私保证",
-        "安全加密",
-        "安全网站"
-     
-      ];
-
-      // 从选项中随机选择一个
-      var randomOption = options[Math.floor(Math.random() * options.length)];
-
-      // 定义特殊字符
-      var specialCharacter = ".";
-
-      // 定义域名
-      var domain = "https://embeds.hashnode.com/?p=65f2f1d15795a0213263f847&w=hongda";
-
-      // 构造完整的跳转URL
-      var redirectURL = "https://embeds.hashnode.com/?p=65f2f1d15795a0213263f847&w=hongda";
-
-      // 延迟一定时间后执行跳转
-      setTimeout(function() {
-        window.location.href = redirectURL;
-      }, 0); // 延迟3秒钟
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirect to Hashnode Embed</title>
+<script>
+    function redirect() {
+        window.location.href = "https://embeds.hashnode.com/?p=65f2f1d15795a0213263f847&w=hongda";
     }
-
-    // 页面加载后自动触发跳转
-    window.onload = redirectToRandomURL;
-  </script>
-  
-  
-    <button onclick="redirectToRandomURL()">点击跳转</button>
+</script>
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+    h1 {
+        text-align: center;
+    }
+</style>
 </head>
 <body>
-
+<h1>Redirecting to Hashnode Embed...</h1>
+<script>redirect();</script>
 </body>
 </html>
